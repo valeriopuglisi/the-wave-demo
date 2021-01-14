@@ -1,0 +1,43 @@
+
+.text-macro-cat-menu{
+    text-align: left;
+    font: normal normal 900 12px/20px Avenir;
+    letter-spacing: 0.6px;
+    color: #000000;
+    opacity: 1;
+}
+
+
+.text-cat-menu{
+    text-align: left;
+    font: normal normal normal 30px/40px Avenir;
+    letter-spacing: 0px;
+    color: #5738FF;
+    opacity: 1;
+}
+
+
+.text-sub-cat-menu{
+    text-align: left;
+    font: normal normal normal 15px/20px Avenir;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1
+}
+
+.checked-text{
+    color: #5738FF;
+    text-align: left;
+    font: normal normal normal 20px/25px Avenir;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+
+.unchecked-text{
+    
+    text-align: left;
+    font: normal normal normal 20px/25px Avenir;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }

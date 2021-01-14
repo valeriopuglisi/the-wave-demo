@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-between compare-banner ">
+    <div *ngIf="productsToCompare.length == 1" class="text-banner">Seleziona altri 2 per effettuare il confronto dei prodotti</div>
+    <div *ngIf="productsToCompare.length == 2" class="text-banner">Seleziona ancora un prodotto per un confronto piu' dettagliato</div>
+    <div *ngIf="productsToCompare.length == 3" class="text-banner">Confronta i modelli selezionati </div>
+    <div *ngIf="productsToCompare.length > 3" class="text-banner"> Puoi selezionare massimo tre prodotti per confronto  </div>
+    <div class="btn-group me-2 justify-content-end">
+        <button mat-button *ngIf="productsToCompare.length != 3" disabled="'true'" class="activated-button" > CONFRONTA </button>
+        <button mat-button *ngIf="productsToCompare.length == 3" (click)="openDialog()" class="disabled-button" > CONFRONTA </button>
+    </div>
+</div>

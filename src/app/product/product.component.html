@@ -1,0 +1,68 @@
+
+<div class="box" >
+    <div class="product-box">
+        <div class="row justify-content-between header-box">
+
+            <div *ngIf="product.discount > 0" class="col-5 discount-box">
+                <p class="discount-text ">Risparmia il {{ product.discount }}%</p>
+            </div>
+
+            <div *ngIf="product.discount == 0" class="col-5 undiscount-box"> </div>
+    
+            <div class="col-2">
+                <button  class="heart-box"  mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+                    <mat-icon svgIcon="heart_gray"></mat-icon>
+                </button>
+            </div>
+        </div>
+        <img src="../../assets/boiler.png" width="100%" height="100%">
+    </div>
+    
+
+    <div>
+    <h5>{{ product.brend }}</h5>
+        
+    <h4 [title]="product.name + ' details'">
+        {{ product.name }}
+    </h4>      
+    <p *ngIf="product.description">
+        {{product.description}}
+    </p>
+
+    <div>
+        <h3 style="display: inline;" [class]="product.discount > 0 ? 'discounted-price' : 'entire-price'" > {{product.price}} € </h3>
+        <h6 style="display: inline;" *ngIf="product.discount > 0"><del style="color: darkgrey;"> {{ product.price +(product.price * product.discount ) / 100}}  €</del></h6>
+        <h4 [class]="product.discount > 0 ? 'discounted-price' : 'entire-price'"  > Sopralluogo e istallazione inclusi</h4>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="card-tail d-flex justify-content-between align-items-center mt-3">
+        <div class="btn-group">
+            <mat-icon class="mat-icon-star"  svgIcon="star"></mat-icon> 
+            <mat-icon class="mat-icon-star"  svgIcon="star"></mat-icon>
+            <mat-icon class="mat-icon-star"  svgIcon="star"></mat-icon>
+            <mat-icon class="mat-icon-star"  svgIcon="star"></mat-icon>
+            <mat-icon class="mat-icon-star"  svgIcon="star"></mat-icon>
+        </div>
+        
+        <mat-checkbox
+          class="mt-2"
+          [checked]="checked"
+          color = "primary"
+          [(indeterminate)]="indeterminate"
+          [labelPosition]="labelPosition"
+          [disabled]="disabled"
+          (change)="setAll($event.checked, product)"
+        >
+        <span [class]=" checked ? 'checked-text' : 'unchecked-text' "> CONFRONTA</span>
+        </mat-checkbox>
+    </div>
+    </div>
+</div>
+
+    
+    
+            
+    
+    

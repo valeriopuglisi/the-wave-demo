@@ -1,0 +1,88 @@
+@import '../../assets/fontello.scss';
+
+.discounted-price {
+    color: $secondary;
+}
+
+.entire-price {
+    color: $primary;
+}
+
+.discount-box {
+  margin-top: 3%;
+  margin-left: 3%;
+  background: #FD6600 0% 0% no-repeat padding-box;
+  border-radius: 0px 3px 3px 0px;
+  opacity: 1;
+}
+
+.undiscount-box {
+  margin-top: 14.5%;
+  margin-left: 5%;
+}
+
+.header-box{
+  height: 30px!important;
+}
+
+.product-box{
+  background: #00000008 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+.discount-text {
+  padding-top: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  
+  font: normal normal 900 18px/28px Avenir;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.heart-box {
+  margin-top: 15%;
+  opacity: 1;
+}
+
+
+/* Style buttons */
+mat-checkbox {
+    background-color: white; /* Blue background */
+    border: none; /* Remove borders */
+    color: $primary; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+
+  .mat-icon-star{
+    width: 11px;
+    height: 10px;
+    margin-right: 6px;
+    margin-bottom: 24%;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: $primary;
+  }
+
+  .checked-text{
+    color: #5738FF;
+  }
+
+  .unchecked-text{
+    color: #0000004D;
+  }
+
+  .card-tail{
+    margin-top: 0%;
+  }
+
+  .box{
+    margin-bottom: 5%;
+  }
+  
